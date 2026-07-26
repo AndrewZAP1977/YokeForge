@@ -1,0 +1,66 @@
+name: Feature request
+description: Suggest an improvement or a new YokeForge capability
+title: "[FEATURE] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests may be written in English, Russian, or German.
+
+        Please describe the problem first, then the proposed solution.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Preferred language
+      options:
+        - English
+        - Русский
+        - Deutsch
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or limitation
+      description: What problem would this feature solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: Describe what YokeForge should do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Hardware, aircraft, or flight context
+      description: State which device, aircraft, or situation is involved.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or alternatives
+      description: Explain how you handle the problem now, if applicable.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add screenshots, examples, or other useful details.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked existing Issues for the same or a similar request.
+          required: true
+        - label: This request does not require bypassing YokeForge safety protections.
+          required: true

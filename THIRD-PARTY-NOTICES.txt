@@ -1,0 +1,248 @@
+YokeForge Third-Party Notices
+Release preparation revision for YokeForge 0.1.0
+
+Copyright (c) 2026 AndrewZAP1977.
+All rights reserved in the original YokeForge components.
+
+YokeForge contains or interacts with components owned by third parties.
+Those components are not covered by the proprietary YokeForge license and
+remain subject to their own license terms.
+
+The exact unmodified license and notice documents collected for the verified
+YokeForge 0.1.0 candidate are stored in:
+
+third-party-licenses
+
+The file:
+
+third-party-licenses\FILES-SHA256.txt
+
+records the SHA-256 hash of each supplied license and notice document.
+
+============================================================
+PUBLIC RELEASE STATUS
+============================================================
+
+The .NET and NuGet license and notice inventory has been completed for the
+verified YokeForge 0.1.0 candidate.
+
+PUBLIC DISTRIBUTION REMAINS BLOCKED ONLY BY THE TWO UNRESOLVED ITEMS IDENTIFIED
+BELOW:
+
+1. Microsoft Flight Simulator 2024 native SimConnect.dll redistribution rights.
+2. Microsoft.WindowsAppSDK.WinUI 2.3.x stable-package license conflict.
+
+Do not publish YokeForge.exe or an installer until both matters have been
+resolved or the affected component has been replaced by a legally verified
+distribution method.
+
+============================================================
+1. MICROSOFT FLIGHT SIMULATOR 2024 SIMCONNECT
+============================================================
+
+YokeForge communicates with Microsoft Flight Simulator 2024 through the
+SimConnect API.
+
+The verified candidate embeds the unmodified native SimConnect.dll in its
+self-contained application bundle.
+
+Microsoft Flight Simulator, SimConnect, Microsoft and Windows are trademarks
+or registered trademarks of Microsoft Corporation.
+
+YokeForge is an independent project and is not affiliated with, endorsed by or
+supported by Microsoft Corporation.
+
+STATUS: PENDING BEFORE PUBLIC RELEASE
+
+An official redistribution clarification has been requested at:
+
+https://devsupport.flightsimulator.com/t/redistribution-rights-for-msfs-2024-native-simconnect-dll/18233
+
+The public release requires confirmation of:
+
+- whether the unmodified native SimConnect.dll may be redistributed with an
+  external application;
+- whether it may be embedded unchanged inside a self-contained executable;
+- which Microsoft copyright, license and attribution notices are required;
+- whether SimConnect.msi must be used instead.
+
+No SimConnect redistribution right is claimed by this document.
+
+============================================================
+2. MICROSOFT WINDOWS APP SDK WINUI
+============================================================
+
+Candidate package:
+
+Microsoft.WindowsAppSDK.WinUI 2.3.0
+
+The package contains a license titled:
+
+MICROSOFT WINDOWS APP SDK ENGINEERING PREVIEW
+
+That license restricts the software to development and testing, prohibits use
+in a live operating environment without another Microsoft agreement, and
+prohibits sharing, publishing or distribution.
+
+The same Engineering Preview license was independently found in the later
+stable package Microsoft.WindowsAppSDK.WinUI 2.3.2.
+
+STATUS: PENDING BEFORE PUBLIC RELEASE
+
+Microsoft clarification has been requested at:
+
+https://github.com/microsoft/WindowsAppSDK/issues/6654
+
+The exact candidate-package license and notices are preserved as:
+
+third-party-licenses\WINDOWS-APP-SDK-WINUI-2.3.0-LICENSE-PENDING.txt
+third-party-licenses\WINDOWS-APP-SDK-WINUI-2.3.0-NOTICE.txt
+third-party-licenses\WINDOWS-APP-SDK-WINUI-2.3.0-TOOLS-NOTICE.txt
+
+No right to publicly redistribute the WinUI binaries is claimed by this
+document while this conflict remains unresolved.
+
+============================================================
+3. MICROSOFT .NET
+============================================================
+
+The verified YokeForge candidate is a self-contained .NET application.
+
+Runtime identified in the extracted bundle:
+
+Microsoft .NET 10.0.10
+
+The supplied Microsoft .NET license identifies the software as Distributable
+Code and permits distribution of its object-code form subject to its stated
+requirements and restrictions.
+
+Applicable exact documents:
+
+third-party-licenses\DOTNET-LICENSE.txt
+third-party-licenses\DOTNET-THIRD-PARTY-NOTICES.txt
+
+The complete third-party notices are preserved verbatim and must not be
+translated or selectively shortened.
+
+============================================================
+4. MICROSOFT WINDOWS APP SDK
+============================================================
+
+The candidate dependency graph includes these Windows App SDK packages:
+
+Microsoft.WindowsAppSDK 2.3.1
+Microsoft.WindowsAppSDK.AI 2.3.4
+Microsoft.WindowsAppSDK.Base 2.0.4
+Microsoft.WindowsAppSDK.DWrite 2.1.0
+Microsoft.WindowsAppSDK.Foundation 2.3.5
+Microsoft.WindowsAppSDK.InteractiveExperiences 2.1.3
+Microsoft.WindowsAppSDK.Runtime 2.3.1
+Microsoft.WindowsAppSDK.Widgets 2.0.5
+
+The standard Microsoft Windows App SDK license states that files placed with an
+application by the WindowsAppSDK NuGet package are permitted to be
+redistributed, including in self-contained deployments, subject to the
+license's distribution requirements and restrictions.
+
+This conclusion does not include the separately licensed WinUI package
+described in Section 2.
+
+Applicable exact documents:
+
+third-party-licenses\WINDOWS-APP-SDK-LICENSE.txt
+third-party-licenses\WINDOWS-APP-SDK-THIRD-PARTY-NOTICES.txt
+
+Identical copies of the standard Windows App SDK license and notice were
+deduplicated. One exact unmodified copy is supplied for all package versions
+that contained identical content.
+
+============================================================
+5. MICROSOFT WINDOWS MACHINE LEARNING
+============================================================
+
+Candidate packages:
+
+Microsoft.Windows.AI.MachineLearning 2.1.74
+Microsoft.WindowsAppSDK.ML 2.1.74
+
+The extracted bundle contains Windows ML, ONNX Runtime, DirectML and related
+Windows AI runtime files.
+
+The package licenses identify files placed with the application by the
+WindowsAppSDK NuGet package as redistributable in both framework-dependent and
+self-contained deployments, subject to the stated requirements and
+restrictions.
+
+Applicable exact documents:
+
+third-party-licenses\WINDOWS-ML-RUNTIME-LICENSE.txt
+third-party-licenses\WINDOWS-APP-SDK-ML-LICENSE.txt
+third-party-licenses\WINDOWS-ML-THIRD-PARTY-NOTICES.txt
+
+The Windows ML third-party notice supplied by both related packages was
+identical and is included once without modification.
+
+============================================================
+6. MICROSOFT WEBVIEW2
+============================================================
+
+Candidate package:
+
+Microsoft.Web.WebView2 1.0.3719.77
+
+The extracted bundle contains the WebView2 managed projection and
+WebView2Loader.dll.
+
+The supplied license permits redistribution in source and binary form subject
+to preservation of the copyright notice, conditions and disclaimer.
+
+Applicable exact documents:
+
+third-party-licenses\WEBVIEW2-LICENSE.txt
+third-party-licenses\WEBVIEW2-NOTICE.txt
+
+============================================================
+7. SYSTEM.NUMERICS.TENSORS
+============================================================
+
+Candidate package:
+
+System.Numerics.Tensors 9.0.0
+
+Copyright (c) .NET Foundation and Contributors.
+All rights reserved.
+
+System.Numerics.Tensors is licensed under the MIT License.
+
+Applicable exact documents:
+
+third-party-licenses\SYSTEM-NUMERICS-TENSORS-LICENSE.txt
+third-party-licenses\SYSTEM-NUMERICS-TENSORS-THIRD-PARTY-NOTICES.txt
+
+============================================================
+8. BUILD DEPENDENCIES
+============================================================
+
+The locked restore graph also contains:
+
+Microsoft.Windows.SDK.BuildTools 10.0.26100.4654
+Microsoft.Windows.SDK.BuildTools.MSIX 1.7.251221100
+
+These entries are recorded for reproducible-build traceability. They are build
+and packaging dependencies and are not presented here as separately shipped
+YokeForge runtime packages.
+
+============================================================
+9. DEPENDENCY INVENTORY
+============================================================
+
+The complete recorded package/version list is stored in:
+
+third-party-licenses\DEPENDENCY-INVENTORY.txt
+
+The candidate executable and its dependency evidence remain private release
+preparation material until the two unresolved public-distribution questions
+have been closed.
+
+No source code from the private YokeForge development repository is published
+in the release-only repository.

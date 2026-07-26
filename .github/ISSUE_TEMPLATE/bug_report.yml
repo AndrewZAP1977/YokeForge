@@ -1,0 +1,130 @@
+name: Bug report
+description: Report a reproducible YokeForge software problem
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem.
+
+        Issues may be written in English, Russian, or German.
+        Do not include passwords, access tokens, private keys, or private account information.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Preferred language
+      options:
+        - English
+        - Русский
+        - Deutsch
+    validations:
+      required: true
+
+  - type: input
+    id: yokeforge_version
+    attributes:
+      label: YokeForge version
+      description: Enter the version shown in YokeForge or in the downloaded release.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: input
+    id: msfs_version
+    attributes:
+      label: Microsoft Flight Simulator 2024 version
+      placeholder: "For example: 1.x.x.x"
+    validations:
+      required: true
+
+  - type: input
+    id: aircraft
+    attributes:
+      label: Aircraft
+      placeholder: "For example: default TBM 930"
+    validations:
+      required: true
+
+  - type: textarea
+    id: device
+    attributes:
+      label: Force-feedback device
+      description: Describe the device and any relevant hardware modifications.
+      placeholder: "Custom yoke based on Microsoft SideWinder Force Feedback 2..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: autopilot
+    attributes:
+      label: Autopilot state
+      options:
+        - "Off"
+        - "On"
+        - Problem occurs in both states
+        - Not relevant
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: Describe what is wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List clear steps that reproduce the problem.
+      placeholder: |
+        1. Start YokeForge
+        2. Start Microsoft Flight Simulator 2024
+        3. Load ...
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or additional information
+      description: Drag files here when useful. Remove unrelated personal information before uploading.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked existing Issues for the same problem.
+          required: true
+        - label: I am using an official, unmodified YokeForge release.
+          required: true
+        - label: I removed passwords, tokens, private keys, and private account information.
+          required: true

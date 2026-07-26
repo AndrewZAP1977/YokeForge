@@ -1,0 +1,152 @@
+YokeForge End User License Agreement
+Version 1.0
+
+Copyright (c) 2026 AndrewZAP1977.
+All rights reserved.
+
+IMPORTANT: This agreement applies only to YokeForge software and
+documentation owned by AndrewZAP1977. Third-party components are governed by
+their own license terms. See THIRD-PARTY-NOTICES.txt.
+
+1. ACCEPTANCE
+
+By downloading, installing, copying or using YokeForge, you agree to the terms
+of this End User License Agreement.
+
+If you do not agree to these terms, do not download, install or use YokeForge.
+
+2. OWNERSHIP
+
+YokeForge is licensed, not sold.
+
+All ownership rights, copyright and other intellectual property rights in
+YokeForge remain with AndrewZAP1977, except for third-party software,
+trademarks and other material owned by their respective rightsholders.
+
+This agreement does not provide access to the YokeForge source code.
+
+3. LICENSE GRANT
+
+Subject to compliance with this agreement, you are granted a limited,
+non-exclusive, non-transferable and revocable license to:
+
+a. download the official unmodified YokeForge release;
+
+b. install and use YokeForge on Windows computers that you own or control;
+
+c. create a reasonable number of backup copies for your own use.
+
+This license is granted for personal and non-commercial use.
+
+Commercial, organizational, training-centre, simulator-centre or paid-service
+use requires separate written permission from the copyright holder.
+
+4. RESTRICTIONS
+
+Except where applicable law expressly permits otherwise, you may not:
+
+a. sell, rent, lease, sublicense or commercially exploit YokeForge;
+
+b. redistribute, mirror, republish or upload YokeForge or its installer to
+another website, repository, file-sharing service or software package;
+
+c. modify, translate, adapt or create derivative versions of YokeForge;
+
+d. reverse engineer, decompile or disassemble YokeForge;
+
+e. remove or alter copyright, attribution, trademark, safety or license
+notices;
+
+f. present a modified version as an official YokeForge release;
+
+g. use YokeForge in violation of applicable law;
+
+h. use YokeForge to control a real aircraft or in another safety-critical
+system;
+
+i. intentionally bypass or disable device travel protection, force limits,
+watchdog protection or automatic safety disarming.
+
+You may link to the official YokeForge repository and official GitHub Releases
+page.
+
+5. THIRD-PARTY COMPONENTS
+
+YokeForge may contain or interact with software and runtime components owned by
+third parties.
+
+Those components remain subject to their respective license terms.
+
+This agreement does not grant ownership of Microsoft Flight Simulator,
+SimConnect, Microsoft Windows, the Windows App SDK, the .NET runtime or any
+other third-party software.
+
+If a third-party license conflicts with this agreement for that third-party
+component, the third-party license controls for that component.
+
+6. UPDATES
+
+Updates may add, remove, modify or discontinue features.
+
+The copyright holder is not required to provide updates, compatibility fixes
+or continued support.
+
+A later release may be provided under an updated license agreement.
+
+7. HARDWARE AND SAFETY
+
+Force-feedback hardware may move unexpectedly and produce significant
+mechanical force.
+
+You are responsible for:
+
+a. the mechanical and electrical condition of your hardware;
+
+b. correct wiring, motor power and physical construction;
+
+c. performing device calibration;
+
+d. keeping people and objects clear of moving parts;
+
+e. disconnecting motor power when unsafe behaviour occurs;
+
+f. determining whether the software is suitable for your particular hardware.
+
+YokeForge is not certified aviation equipment.
+
+8. NO WARRANTY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOKEFORGE IS PROVIDED
+"AS IS" AND "WITH ALL FAULTS", WITHOUT WARRANTIES OF ANY KIND.
+
+NO WARRANTY IS GIVEN THAT YOKEFORGE WILL BE ERROR-FREE, UNINTERRUPTED,
+COMPATIBLE WITH EVERY DEVICE OR AIRCRAFT, OR SUITABLE FOR A PARTICULAR
+PURPOSE.
+
+MANDATORY RIGHTS THAT CANNOT LAWFULLY BE EXCLUDED REMAIN UNAFFECTED.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL
+NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE
+DAMAGES, LOSS OF DATA, LOSS OF USE, LOSS OF PROFITS, DAMAGE TO HARDWARE OR
+OTHER LOSS ARISING FROM THE INSTALLATION OR USE OF YOKEFORGE.
+
+NOTHING IN THIS AGREEMENT EXCLUDES LIABILITY THAT CANNOT LAWFULLY BE
+EXCLUDED.
+
+10. TERMINATION
+
+This license terminates automatically if you violate this agreement.
+
+After termination, you must stop using YokeForge and delete all copies in your
+possession or control.
+
+11. ENTIRE AGREEMENT
+
+This agreement and the applicable third-party license notices constitute the
+terms governing the distributed YokeForge software.
+
+No permission not expressly granted in this agreement is granted.
+
+END OF AGREEMENT

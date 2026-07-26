@@ -1,0 +1,135 @@
+# ============================================================
+# YokeForge release-only repository
+# ============================================================
+#
+# Program binaries belong in GitHub Releases.
+# They must not be committed to the Git repository.
+
+# Release packages and executable files
+*.exe
+*.msi
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.zip
+*.7z
+*.rar
+*.cab
+
+# Compiled libraries and debug files
+*.dll
+*.lib
+*.exp
+*.obj
+*.o
+*.pdb
+*.ilk
+*.map
+*.iobj
+*.ipdb
+*.idb
+*.dmp
+
+# Build output directories
+build/
+build-*/
+bin/
+obj/
+out/
+dist/
+publish/
+artifacts/
+packages/
+Release/
+Debug/
+x64/
+x86/
+
+# Native source code
+*.c
+*.cc
+*.cpp
+*.cxx
+*.h
+*.hh
+*.hpp
+*.hxx
+*.rc
+*.def
+
+# .NET and WinUI source/project files
+*.cs
+*.xaml
+*.csproj
+*.fsproj
+*.vbproj
+*.sln
+*.slnx
+*.props
+*.targets
+packages.lock.json
+
+# CMake source and configuration
+CMakeLists.txt
+CMakePresets.json
+cmake/
+*.cmake
+
+# Build and development scripts
+*.ps1
+*.psm1
+*.bat
+*.cmd
+*.sh
+
+# Microsoft Flight Simulator SDK and SimConnect development files
+MSFS 2024 SDK/
+MSFS2024_SDK/
+SimConnect SDK/
+SimConnect.h
+SimConnect.lib
+SimConnect.dll
+
+# Logs, traces and generated data
+*.log
+*.trace
+*.ffbtrace
+*.csv
+*.tmp
+*.temp
+*.bak
+*.old
+*.cache
+
+# Secrets, certificates and credentials
+.env
+.env.*
+*.pfx
+*.p12
+*.cer
+*.crt
+*.pem
+*.key
+*.snk
+secrets/
+credentials/
+
+# Visual Studio and editors
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows and macOS system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary files
+~$*
+*~

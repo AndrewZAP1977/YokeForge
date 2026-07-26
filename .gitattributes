@@ -1,0 +1,9 @@
+# Keep repository text files consistent on every operating system.
+* text=auto eol=lf
+
+# Preserve third-party license evidence byte-for-byte.
+third-party-licenses/** -text
+
+# Normalize YokeForge-authored inventory files.
+third-party-licenses/DEPENDENCY-INVENTORY.txt text eol=lf
+third-party-licenses/FILES-SHA256.txt text eol=lf

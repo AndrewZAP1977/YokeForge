@@ -1,0 +1,122 @@
+name: Safety problem
+description: Report unexpected, continuous, or dangerous force-feedback movement
+title: "[SAFETY] "
+labels: ["safety"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Disconnect motor power immediately if the device produces unexpected, continuous, or dangerous force.**
+
+        Do not bypass travel protection, force limits, the watchdog, or automatic disarming to repeat the test.
+
+        Issues may be written in English, Russian, or German.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Preferred language
+      options:
+        - English
+        - Русский
+        - Deutsch
+    validations:
+      required: true
+
+  - type: input
+    id: yokeforge_version
+    attributes:
+      label: YokeForge version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: input
+    id: aircraft
+    attributes:
+      label: Aircraft and flight situation
+      placeholder: "Default TBM 930, on ground / in flight / landing..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: device
+    attributes:
+      label: Force-feedback device and hardware
+      description: Describe the device, mechanical arrangement, power supply, and relevant modifications.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: autopilot
+    attributes:
+      label: Autopilot state when the event occurred
+      options:
+        - "Off"
+        - "On"
+        - Being enabled or disabled
+        - Unknown
+        - "Not relevant"
+    validations:
+      required: true
+
+  - type: textarea
+    id: event
+    attributes:
+      label: What happened
+      description: Describe the unexpected movement or force as precisely as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: before
+    attributes:
+      label: What happened immediately before it
+      description: Include the last user action, aircraft event, calibration step, or setting change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: response
+    attributes:
+      label: How the event stopped
+      description: State whether automatic disarming worked, motor power was disconnected, or another action stopped it.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repeated
+    attributes:
+      label: Did the event happen more than once?
+      options:
+        - "No"
+        - "Yes"
+        - "Not tested again for safety reasons"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant logs, screenshots, and additional details
+      description: Remove unrelated personal information before uploading.
+
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: Motor power is disconnected or the device is otherwise in a safe state.
+          required: true
+        - label: I did not disable or bypass YokeForge safety protections to repeat the event.
+          required: true
+        - label: I removed passwords, tokens, private keys, and private account information.
+          required: true
