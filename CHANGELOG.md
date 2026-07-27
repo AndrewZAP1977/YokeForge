@@ -5,6 +5,23 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.1]
+
+Maintenance release focused on safer first-run defaults and interface polish.
+
+### Changed
+
+- English is now the default interface language on first launch.
+- Automatic Microsoft Flight Simulator 2024 launch is disabled by default.
+- Automatic force activation is disabled by default.
+- Increased the YokeForge logo size in the navigation pane.
+- Clarified the Russian force-activation confirmation label.
+
+### Fixed
+
+- A left click on the system-tray icon now restores and activates the YokeForge
+  window directly, including when the window was minimized.
+
 ## [0.1.0]
 
 First public release.
