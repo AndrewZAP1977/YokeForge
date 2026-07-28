@@ -5,6 +5,24 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.2]
+
+Maintenance release focused on interface usability, tray behavior and
+installer flexibility.
+
+### Added
+
+- Light and dark interface themes.
+- In-app project support controls.
+- Current-user and all-users installation modes.
+
+### Changed
+
+- Minor interface and usability improvements.
+- Improved contextual tooltip behavior.
+- A left click on the system-tray icon now toggles the YokeForge window
+  between visible and hidden states, while still restoring a minimized window.
+
 ## [0.1.1]
 
 Maintenance release focused on safer first-run defaults and interface polish.
