@@ -5,6 +5,20 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.3]
+
+Maintenance release focused on single-instance startup and reliable window
+activation.
+
+### Fixed
+
+- Prevented multiple YokeForge processes and system-tray icons when the
+  application is launched more than once.
+- A repeated launch now restores and activates the existing YokeForge window
+  instead of opening another application instance.
+- Restoring the window through the system-tray icon now reliably brings it to
+  the foreground.
+
 ## [0.1.2]
 
 Maintenance release focused on interface usability, tray behavior and
