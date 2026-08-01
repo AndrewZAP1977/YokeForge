@@ -5,6 +5,46 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.4]
+
+Feature release focused on autopilot tuning feedback, application lifecycle,
+portable interface preferences and verified in-app updates.
+
+### Added
+
+- Live autopilot roll monitor showing the cockpit command, calculated target,
+  physical yoke position and recorded peak travel.
+- Contextual autopilot tuning guide in English, Russian and German.
+- Manual update checks and an optional check when YokeForge starts.
+- Confirmed update download flow that selects the exact published installer,
+  verifies its GitHub-provided SHA-256 digest and launches the normal
+  interactive installer.
+- YokeForge-managed interface preferences in exported settings files; loading
+  such a file now restores the saved interface checkboxes.
+
+### Changed
+
+- YokeForge now closes after Microsoft Flight Simulator 2024 exits only when
+  that simulator session was launched by the current YokeForge session.
+- Update downloads are stored under the current user's local application data.
+- Active force output is stopped before a verified update installer is
+  launched.
+- Refined update-card and settings tooltip behavior.
+
+### Fixed
+
+- Exported settings now preserve all YokeForge interface checkbox states.
+- The update-card tooltip no longer appears over unrelated empty card space.
+
+### Safety
+
+- Update installers are never launched unless the expected filename and
+  SHA-256 digest match the published release metadata.
+- Updates require explicit confirmation and are never installed silently.
+- This release does not change force-feedback calculations, DirectInput force
+  behavior, SimConnect telemetry, calibration, travel protection, hardware
+  safety or the independent roll and pitch Spring containers.
+
 ## [0.1.3]
 
 Maintenance release focused on single-instance startup and reliable window
