@@ -5,6 +5,39 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.5]
+
+Feature release focused on clearer system-tray status and persistent
+controller tuning.
+
+### Added
+
+- Color-coded system-tray status indicator:
+  - gray while waiting for Microsoft Flight Simulator 2024;
+  - green when telemetry, device connection and force output are ready;
+  - red when YokeForge reports an active fault.
+- Status-specific system-tray tooltips.
+
+### Changed
+
+- Controller tuning values, effect checkboxes and the general autopilot-effects
+  switch are now saved automatically.
+- Settings loaded from an exported INI file now remain active after restarting
+  YokeForge.
+- Restoring accepted defaults now also updates the persistent controller
+  settings.
+
+### Fixed
+
+- Controller tuning sliders no longer return to their accepted defaults after
+  YokeForge is restarted.
+
+### Safety
+
+- This release does not change force-feedback calculations, DirectInput force
+  behavior, SimConnect telemetry, calibration, travel protection, hardware
+  safety or the independent roll and pitch Spring containers.
+
 ## [0.1.4]
 
 Feature release focused on autopilot tuning feedback, application lifecycle,
