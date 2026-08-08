@@ -5,6 +5,49 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.6]
+
+Feature release focused on manual-control feel, live force feedback and trim
+behavior.
+
+### Added
+
+- Live manual-force status indicators for:
+  - airspeed contribution;
+  - resulting X/Y stiffness;
+  - damping;
+  - propeller loading on Y;
+  - pitch and roll trim;
+  - force-neutral target and actual physical yoke position.
+- Independent X and Y trim-influence controls.
+- Live roll-trim support when the aircraft/runtime provides that telemetry.
+- Step-by-step manual-force setup guide in English, Russian and German.
+
+### Changed
+
+- Manual X and Y control loading can now be tuned independently.
+- Refined airspeed loading on the pitch axis for a more natural manual-control
+  feel.
+- Propeller loading on Y is now adjustable independently from airspeed loading.
+- The autopilot setup guide now includes a short Y-axis tuning check while
+  keeping the existing X-axis workflow unchanged.
+- Expanded and clarified user-facing setting tooltips and setup guidance.
+
+### Fixed
+
+- Removed hidden manual-trim target caps that could limit available trim-neutral
+  movement.
+- Corrected the automatic force-activation readiness gate.
+- Optional roll-trim telemetry no longer has to be part of the mandatory
+  SimConnect data set.
+
+### Safety
+
+- This release intentionally changes manual-control loading and trim behavior.
+- Autopilot force calculations, calibration, travel protection, watchdog and
+  DISARM safety logic remain unchanged.
+- The independent roll and pitch Spring containers remain separate.
+
 ## [0.1.5]
 
 Feature release focused on clearer system-tray status and persistent
