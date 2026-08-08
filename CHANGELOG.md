@@ -5,6 +5,12 @@ This file records notable changes in public YokeForge releases.
 The repository contains release information and downloadable binary packages.
 The YokeForge source code is maintained separately and is not published here.
 
+## [0.1.7]
+
+### Fixed
+
+- Critical bugfix.
+
 ## [0.1.6]
 
 Feature release focused on manual-control feel, live force feedback and trim
